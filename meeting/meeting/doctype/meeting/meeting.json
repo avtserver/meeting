@@ -19,7 +19,9 @@
   "attendees_section",
   "attendees",
   "meeting_minutes_section",
-  "minutes"
+  "minutes",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -96,10 +98,22 @@
    "fieldtype": "Table",
    "label": "Meeting Minutes",
    "options": "Meeting Minute"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "published",
+   "fieldtype": "Data",
+   "label": "Published"
   }
  ],
+ "has_web_view": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2021-05-09 17:55:49.174110",
+ "modified": "2021-05-09 19:59:54.006230",
  "modified_by": "Administrator",
  "module": "Meeting",
  "name": "Meeting",
@@ -143,6 +157,7 @@
    "write": 1
   }
  ],
+ "route": "meeting",
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "title",
