@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "autoname": "format:Meeting-{MM}-{YY}-{####}",
+ "creation": "2021-05-08 20:32:26.558541",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "status",
+  "column_break_3",
+  "date",
+  "from_time",
+  "to_time",
+  "meeting_agenda_section",
+  "agenda",
+  "attendees_section",
+  "attendees",
+  "meeting_minutes_section",
+  "minutes"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Planned\nIn progress\nCompleted\nCanceled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "To Time",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "meeting_agenda_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Agenda"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Table",
+   "label": "Agenda",
+   "options": "Meeting Agenda"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "attendees_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Attendees"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Table",
+   "label": "Attendees",
+   "options": "Meeting Attendee"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "meeting_minutes_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Minutes"
+  },
+  {
+   "fieldname": "minutes",
+   "fieldtype": "Table",
+   "label": "Meeting Minutes",
+   "options": "Meeting Minute"
+  }
+ ],
+ "links": [],
+ "modified": "2021-05-09 17:55:49.174110",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "Meeting",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Meeting Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Meeting Attendee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}
