@@ -113,7 +113,7 @@
  "has_web_view": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2021-05-09 19:59:54.006230",
+ "modified": "2021-05-09 20:27:18.191479",
  "modified_by": "Administrator",
  "module": "Meeting",
  "name": "Meeting",
@@ -158,6 +158,7 @@
   }
  ],
  "route": "meeting",
+ "show_preview_popup": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "title_field": "title",
